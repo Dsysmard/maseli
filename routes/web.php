@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index');
 Route::resource('empresas', 'EmpresasController');
 Route::get('empresas/destroy/{id}', ['as' => 'empresas/destroy', 'uses' => 'EmpresasController@destroy']);
 Route::post('empresas/search', ['as' => 'empresas/search', 'uses'=>'EmpresasController@search']);
+
+Route::resource('empleados', 'EmpleadosController');
+Route::get('empleados/destroy/{id}', ['as' => 'empleados/destroy', 'uses' => 'EmpleadosController@destroy']);
+Route::post('empleados/search', ['as' => 'empleados/search', 'uses'=>'EmpleadosController@search']);

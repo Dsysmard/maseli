@@ -113,7 +113,7 @@
             </li>
             
             <li class="treeview">
-              <a href="{{url('desarrollosocial/estados')}}">
+              <a href="{{url('empleados')}}">
                 {{-- <i class="fa fa-th"></i> --}}
                 <span>Empleados</span>
                  <i class="fa fa-angle-left pull-right"></i>

@@ -91,7 +91,7 @@ class EmpresasController extends Controller
             return redirect("empresas");
         }
         else{
-            return view("dempresas.edit", ["empresa" => $empresa]);
+            return view("empresas.edit", ["empresa" => $empresa]);
         }
     }
 
