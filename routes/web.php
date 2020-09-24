@@ -26,3 +26,7 @@ Route::post('empresas/search', ['as' => 'empresas/search', 'uses'=>'EmpresasCont
 Route::resource('empleados', 'EmpleadosController');
 Route::get('empleados/destroy/{id}', ['as' => 'empleados/destroy', 'uses' => 'EmpleadosController@destroy']);
 Route::post('empleados/search', ['as' => 'empleados/search', 'uses'=>'EmpleadosController@search']);
+
+Route::resource('contratos', 'ContratosController');
+Route::get('contratos/destroy/{id}', ['as' => 'contratos/destroy', 'uses' => 'ContratosController@destroy']);
+Route::post('contratos/search', ['as' => 'contratos/search', 'uses'=>'ContratosController@search']);

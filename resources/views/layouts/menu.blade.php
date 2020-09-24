@@ -126,7 +126,7 @@
             </li>
 
             <li class="treeview">
-              <a href="{{url('desarrollosocial/municipios')}}">
+              <a href="{{url('contratos')}}">
                 {{-- <i class="fa fa-shopping-cart"></i> --}}
                 <span>Contratos</span>
                  <i class="fa fa-angle-left pull-right"></i>
