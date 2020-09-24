@@ -100,7 +100,7 @@
             <li class="header"></li>
             
             <li class="treeview">
-              <a href="{{url('desarrollosocial/ciudadanos')}}">
+              <a href="{{url('empresas')}}">
                 {{-- <i class="fa fa-laptop"></i> --}}
                 <span>Empresas</span>
                 <i class="fa fa-angle-left pull-right"></i>

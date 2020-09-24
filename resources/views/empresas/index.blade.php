@@ -9,7 +9,7 @@
     {!! Form::open(['route' => 'empresas/search', 'method' => 'post', 'novalidate', 'class' => 'form-inline']) !!}
           <div class="form-group">
             <label for="exampleInputName2">Buscar</label>
-            <input type="text" class="form-control" name = "id" placeholder='Ingresa dato para buscar'>
+            <input type="text" class="form-control" name = "nombre" placeholder='Ingresa dato para buscar'>
           </div>
           <button type="submit" class="btn btn-primary">Buscar</button>
         <a href="{{ route('empresas.index') }}" class="btn btn-info">Mostrar Todos</a>
