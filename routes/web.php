@@ -30,3 +30,19 @@ Route::post('empleados/search', ['as' => 'empleados/search', 'uses'=>'EmpleadosC
 Route::resource('contratos', 'ContratosController');
 Route::get('contratos/destroy/{id}', ['as' => 'contratos/destroy', 'uses' => 'ContratosController@destroy']);
 Route::post('contratos/search', ['as' => 'contratos/search', 'uses'=>'ContratosController@search']);
+
+Route::resource('puestos', 'PuestosController');
+Route::get('puestos/destroy/{id}', ['as' => 'puestos/destroy', 'uses' => 'PuestosController@destroy']);
+Route::post('puestos/search', ['as' => 'puestos/search', 'uses'=>'PuestosController@search']);
+
+Route::resource('turnos', 'TurnosController');
+Route::get('turnos/destroy/{id}', ['as' => 'turnos/destroy', 'uses' => 'TurnosController@destroy']);
+Route::post('turnos/search', ['as' => 'turnos/search', 'uses'=>'TurnosController@search']);
+
+Route::resource('pagosext', 'PagosExternosController');
+Route::get('pagosext/destroy/{id}', ['as' => 'pagosext/destroy', 'uses' => 'PagosExternosController@destroy']);
+Route::post('pagosext/search', ['as' => 'pagosext/search', 'uses'=>'PagosExternosController@search']);
+
+Route::resource('estados', 'EstadosController');
+Route::get('estados/destroy/{id}', ['as' => 'estados/destroy', 'uses' => 'EstadosController@destroy']);
+Route::post('estados/search', ['as' => 'estados/search', 'uses'=>'EstadosController@search']);

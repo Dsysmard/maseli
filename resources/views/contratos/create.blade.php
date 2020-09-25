@@ -9,50 +9,86 @@
 		<div class="col-md-10 col-md-offset-1"style="margin: 2% 50px 75px 100px;">
 			{!! Form::open(['route' => 'contratos.store', 'method' => 'post', 'novalidate']) !!}
 
+
                   <div class="form-group">
                       {!! Form::label('SELECCIONE EL NOMBRE DEL EMPLEADO:', 'SELECCIONE EL NOMBRE DEL EMPLEADO:') !!}
-                      {!! Form::text('empleado', null, ['class' => 'form-control' , 'required' => 'required','placeholder'=>'Seleccione el nombre del empleado']) !!}
+                      <select class="form-control" id="nombre" name="nombre" >
+                      <option value="">SELECCIONE UN EMPLEADO</option>
+                        @foreach($empleado as $empleados)
+                        <option value="{{$empleados->nombre}}">{{$empleados->nombre}}</option>
+                        @endforeach
+                    </select>
                   </div>
 
                   <div class="form-group">
                       {!! Form::label('SELECCIONE EL NOMBRE DE LA EMPRESA:', 'SELECCIONE EL NOMBRE DE LA EMPRESA:') !!}
-                      {!! Form::text('empresa', null, ['class' => 'form-control' , 'required' => 'required','placeholder'=>'Seleccione el nombre del empleado']) !!}
+                      <select class="form-control" id="nombre" name="nombre" >
+                      <option value="">SELECCIONE EL NOMBRE DE LA EMPRESA</option>
+                        @foreach($empresa as $empresas)
+                        <option value="{{$empresas->nombre}}">{{$empresas->nombre}}</option>
+                        @endforeach
+                    </select>
                   </div>
 
                   <div class="form-group">
                       {!! Form::label('SELECCIONE EL DEPARTAMENTO:', 'SELECCIONE EL DEPARTAMENTO:') !!}
-                      {!! Form::text('departamento', null, ['class' => 'form-control' , 'required' => 'required','placeholder'=>'Seleccione el nombre del empleado']) !!}
+                      <select class="form-control" id="departamentos" name="departamentos" >
+                      <option value="">SELECCIONE EL DEPARTAMENTO</option>
+                        @foreach($empresa as $empresas)
+                        <option value="{{$empresas->departamentos}}">{{$empresas->departamentos}}</option>
+                        @endforeach
+                    </select>
                   </div>
 
                   <div class="form-group">
                       {!! Form::label('PAGO EXTERNO:', 'PAGO EXTERNO:') !!}
-                      {!! Form::text('pago_externo', null, ['class' => 'form-control' , 'required' => 'required','placeholder'=>'Indique el pago externo']) !!}
+                      <select class="form-control" id="pago_externo" name="pago_externo" >
+                      <option value="">SELECCIONE SI TIENE PAGO EXTERNO</option>
+                        @foreach($pagos_ext as $pagos_externos)
+                        <option value="{{$pagos_externos->nombre_pago}}">{{$pagos_externos->nombre_pago}}</option>
+                        @endforeach
+                    </select>
                   </div>
 
                   <div class="form-group">
                       {!! Form::label('SUPERVISOR:', 'SUPERVISOR:') !!}
-                      {!! Form::text('supervisor', null, ['class' => 'form-control' , 'required' => 'required','placeholder'=>'Indique si tiene supervisor a cargo']) !!}
+                      <select class="form-control" id="supervisor" name="supervisor" >
+                      <option value="">SELECCIONE SI TIENE SUPERVISOR</option>
+                        @foreach($pagos_ext as $pagos_externos)
+                        <option value="{{$pagos_externos->nombre_pago}}">{{$pagos_externos->nombre_pago}}</option>
+                        @endforeach
+                    </select>
                   </div>
 
                   <div class="form-group">
                       {!! Form::label('SUPERVISOR ASIGNADO:', 'SUPERVISOR ASIGNADO:') !!}
-                      {!! Form::text('supervisor_asignado', null, ['class' => 'form-control' , 'required' => 'required','placeholder'=>'Seleccione el nombre del supervisor']) !!}
+                      <select class="form-control" id="supervisor_asignado" name="supervisor_asignado" >
+                      <option value="">SELECCIONE UN SUPERVISOR A CARGO</option>
+                        @foreach($empleado as $empleados)
+                        <option value="{{$empleados->nombre}}">{{$empleados->nombre}}</option>
+                        @endforeach
+                    </select>
                   </div>
 
 
                   <div class="form-group">
-                      {!! Form::label('PUESTO:', 'PUESTO:') !!}
-                      {!! Form::text('puesto', null, ['class' => 'form-control' , 'required' => 'required','placeholder'=>'Seleccione el puesto asignado']) !!}
+                      {!! Form::label('SELECCIONE EL PUESTO:', 'SELECCIONE EL PUESTO:') !!}
+                      <select class="form-control" id="puesto" name="puesto" >
+                      <option value="">SELECCIONE EL PUESTO</option>
+                        @foreach($puesto as $puestos)
+                        <option value="{{$puestos->nombre_puesto}}">{{$puestos->nombre_puesto}}</option>
+                        @endforeach
+                    </select>
                   </div>
 
                   <div class="form-group">
-                      {!! Form::label('TURNO:', 'TURNO:') !!}
-                      {!! Form::text('turno', null, ['class' => 'form-control' , 'required' => 'required','placeholder'=>'Seleccione el turno asignado']) !!}
-                  </div>
-
-                  <div class="form-group">
-                      {!! Form::label('HORARIO:', 'HORARIO:') !!}
-                      {!! Form::text('horario', null, ['class' => 'form-control' , 'required' => 'required','placeholder'=>'Seleccione el horario asignado']) !!}
+                      {!! Form::label('SELECCIONE EL TURNO:', 'SELECCIONE EL TURNO:') !!}
+                      <select class="form-control" id="turno" name="turno" >
+                      <option value="">SELECCIONE EL TURNO</option>
+                        @foreach($turno as $turnos)
+                        <option value="{{$turnos->nombre_turno}}">{{$turnos->nombre_turno}}</option>
+                        @endforeach
+                    </select>
                   </div>
 
                   <div class="form-group">

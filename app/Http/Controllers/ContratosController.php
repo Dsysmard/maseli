@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use App\Empleado as Empleado;
 use App\Empresa as Empresa;
 use App\Contrato as Contrato;
-
+use App\Puesto as Puesto;
+use App\Turno as Turno;
+use App\PagoExterno as PagoExterno;
 class ContratosController extends Controller
 {
     public function __construct()
@@ -33,7 +35,13 @@ class ContratosController extends Controller
 
     public function create()
     {
-        return \View::make('contratos.create');
+        $empleado = Empleado::all();
+        $empresa = Empresa::all();
+        $contrato = Contrato::all();
+        $puesto = Puesto::all();
+        $turno = Turno::all();
+        $pagos_ext = PagoExterno::all();
+        return \View::make('contratos.create', compact('empleado','contrato','empresa','puesto','turno','pagos_ext'));
     }
 
 
@@ -49,7 +57,6 @@ class ContratosController extends Controller
         $contrato->supervisor_asignado = $request->supervisor_asignado;
         $contrato->puesto = $request->puesto;
         $contrato->turno = $request->turno;
-        $contrato->horario = $request->horario;
         $contrato->sueldo = $request->sueldo;
         $contrato->bono = $request->bono;
         $contrato->observaciones = $request->observaciones;
@@ -69,7 +76,12 @@ class ContratosController extends Controller
     public function edit($id)
     {
         $contrato = Contrato::find($id);
-        return view ('contratos.update',["contrato" => $contrato]);
+        $empresa = Empresa::all();
+        $empleado = Empleado::all();
+        $puesto = Puesto::all();
+        $turno = Turno::all();
+        $pagos_ext = PagoExterno::all();
+        return view ('contratos.update',["contrato" => $contrato, "empresa" => $empresa, "empleado" => $empleado, "puesto" => $puesto, "turno" => $turno, "pagos_ext" => $pagos_ext]);
     }
 
 
@@ -85,7 +97,6 @@ class ContratosController extends Controller
         $contrato->supervisor_asignado = $request->supervisor_asignado;
         $contrato->puesto = $request->puesto;
         $contrato->turno = $request->turno;
-        $contrato->horario = $request->horario;
         $contrato->sueldo = $request->sueldo;
         $contrato->bono = $request->bono;
         $contrato->observaciones = $request->observaciones;

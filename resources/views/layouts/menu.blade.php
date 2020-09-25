@@ -137,6 +137,58 @@
                 <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
               </ul> -->
             </li>
+
+            <li class="treeview">
+              <a href="{{url('puestos')}}">
+                {{-- <i class="fa fa-shopping-cart"></i> --}}
+                <span>Puestos</span>
+                 <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <!-- <ul class="treeview-menu">
+                <li><a href="ventas/venta"><i class="fa fa-circle-o"></i> Agregar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+              </ul> -->
+            </li>
+
+            <li class="treeview">
+              <a href="{{url('turnos')}}">
+                {{-- <i class="fa fa-shopping-cart"></i> --}}
+                <span>Turnos</span>
+                 <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <!-- <ul class="treeview-menu">
+                <li><a href="ventas/venta"><i class="fa fa-circle-o"></i> Agregar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+              </ul> -->
+            </li>
+
+            <li class="treeview">
+              <a href="{{url('pagosext')}}">
+                {{-- <i class="fa fa-shopping-cart"></i> --}}
+                <span>Pagos Externos</span>
+                 <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <!-- <ul class="treeview-menu">
+                <li><a href="ventas/venta"><i class="fa fa-circle-o"></i> Agregar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+              </ul> -->
+            </li>
+
+            <li class="treeview">
+              <a href="{{url('estados')}}">
+                {{-- <i class="fa fa-shopping-cart"></i> --}}
+                <span>Estados</span>
+                 <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <!-- <ul class="treeview-menu">
+                <li><a href="ventas/venta"><i class="fa fa-circle-o"></i> Agregar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+              </ul> -->
+            </li>
                        
             <li class="treeview">
               <a href="#">
