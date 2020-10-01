@@ -46,3 +46,7 @@ Route::post('pagosext/search', ['as' => 'pagosext/search', 'uses'=>'PagosExterno
 Route::resource('estados', 'EstadosController');
 Route::get('estados/destroy/{id}', ['as' => 'estados/destroy', 'uses' => 'EstadosController@destroy']);
 Route::post('estados/search', ['as' => 'estados/search', 'uses'=>'EstadosController@search']);
+
+Route::resource('asistencias', 'AsistenciasController');
+Route::get('asistencias/destroy/{id}', ['as' => 'asistencias/destroy', 'uses' => 'AsistenciasController@destroy']);
+Route::post('asistencias/search', ['as' => 'asistencias/search', 'uses'=>'AsistenciasController@search']);

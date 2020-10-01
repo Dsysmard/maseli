@@ -30,7 +30,8 @@
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="{{url('css/_all-skins.min.css')}}">
     <link rel="apple-touch-icon" href="{{url('img/apple-touch-icon.png')}}">
-    <link rel="shortcut icon" href="{{url('img/favicon.ico')}}">
+    
+    
 
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
@@ -181,6 +182,19 @@
               <a href="{{url('estados')}}">
                 {{-- <i class="fa fa-shopping-cart"></i> --}}
                 <span>Estados</span>
+                 <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <!-- <ul class="treeview-menu">
+                <li><a href="ventas/venta"><i class="fa fa-circle-o"></i> Agregar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Editar</a></li>
+              </ul> -->
+            </li>
+
+            <li class="treeview">
+              <a href="{{url('asistencias')}}">
+                {{-- <i class="fa fa-shopping-cart"></i> --}}
+                <span>Asistencias</span>
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <!-- <ul class="treeview-menu">
